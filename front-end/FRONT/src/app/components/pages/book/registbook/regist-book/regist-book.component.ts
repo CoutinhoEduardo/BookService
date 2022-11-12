@@ -41,26 +41,22 @@ export class RegistBookComponent implements OnInit {
         'eduardo'
       ],
       year: 2003,
-      summary: "Sumarry"
+      summary: "Summary"
     }
 
-    this.http.post<Book>(
-      "https://publishing-house-service.herokuapp.com/api/v1/books/create", 
-      book
-    )
 
-    .subscribe({
-      next: () => {
-        this.router.navigate(["pages/book/list"]);
-      },
-      error:(error)=> {
-        if(error.status === 400){
-          this.msg = "Validation error";
-        }else if (error.status === 0){
-          this.msg = "API not running";
-        }
-      }
-    });
+    // .subscribe({
+    //   next: () => {
+    //     this.router.navigate(["pages/book/list"]);
+    //   },
+    //   error:(error)=> {
+    //     if(error.status === 400){
+    //       this.msg = "Validation error";
+    //     }else if (error.status === 0){
+    //       this.msg = "API not running";
+    //     }
+    //   }
+    // });
   }
 
 }

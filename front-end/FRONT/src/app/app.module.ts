@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import { RegistBookComponent } from './components/pages/book/registbook/regist-book/regist-book.component';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatGridListModule,
     MatCardModule,
     HttpClientModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
     
   ],
   providers: [],
