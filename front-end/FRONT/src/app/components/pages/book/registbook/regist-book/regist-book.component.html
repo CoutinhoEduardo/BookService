@@ -1,0 +1,24 @@
+<form class="regist-book-form">
+  
+    {{id}}
+
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label type="text" id="txtName">Book name</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Long Last Name That Will Be Truncated</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+    </tr></table>
+    
+    <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label type="text" id="txtName2">Book name</mat-label>
+        <input id="txtBookName" matInput>
+    </mat-form-field></td>
+    </tr></table>
+    <button id="regist-book" (click)="regist()" class="done-button" mat-flat-button color="primary">Regist!</button>
+  </form>
+  
